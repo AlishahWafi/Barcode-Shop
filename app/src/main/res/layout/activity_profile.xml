@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.barcodeshop.Profile"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="vertical"
+        android:background="#f7e3d2"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/person"
+            android:id="@+id/profileImage"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="1dp"
+        android:background="@color/colorPrimary">
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eee">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:layout_alignParentLeft="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="First Name"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Saif Ali"
+                android:textSize="25sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="5dp"
+                android:id="@+id/profileName"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="UserName"
+                android:textSize="15sp"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Saif1995"
+                android:textSize="25sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="10dp"
+                android:id="@+id/profileUserName"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone Number"
+                android:textSize="15sp"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="03005523621"
+                android:textSize="25sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="10dp"
+                android:id="@+id/profilePhoneNumber"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp">
+
+            <Button
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/ic_edit"
+                android:backgroundTint="@color/colorPrimary"
+                android:id="@+id/btnProfileEdit"/>
+
+            <Button
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/ic_file_upload"
+                android:backgroundTint="@color/colorPrimary"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/btnProfileUpload"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

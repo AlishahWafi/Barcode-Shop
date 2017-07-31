@@ -1,0 +1,104 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.CartFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/CartRecyclerView">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="25dp"
+        android:visibility="invisible"
+        android:id="@+id/LinearEmptyCart">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No Product in Cart, Please Scan Products In order to continue..."
+            android:gravity="center"
+            android:id="@+id/txtCartEmpty"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:background="#f7e3d2"
+        android:layout_gravity="bottom">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PKR 2000"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/txtCartFragmentPrice"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="20dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Proceed"
+                android:textColor="#fff"
+                android:textSize="13sp"
+                android:background="@color/colorPrimary"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:id="@+id/btnCartProceed"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="18dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Total Items "
+                android:textSize="16sp"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/txthead"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="3"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_toRightOf="@+id/txthead"
+                android:id="@+id/txtCartFragmentItems"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,180 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.ProductDetailFragment"
+    android:background="#fff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#f7e3d2"
+            android:src="@drawable/samsung"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentLeft="true">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3.5"
+                            android:textSize="20sp"
+                            android:id="@+id/rate"
+                            android:background="@drawable/roundedborders"
+                            android:gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:textColor="@color/colorPrimaryDark"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="User Ratings"
+                            android:textSize="10sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginLeft="10dp">
+
+                        <RatingBar
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ratingBar"
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:rating="3.5"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentRight="true">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:layout_marginTop="25dp"
+                        android:text="PKR 25000"
+                        android:textColor="@color/colorPrimary"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Samsung Galaxy Tab S2"
+                android:textSize="25sp"
+                android:layout_marginTop="18dp"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:paddingLeft="16dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:paddingRight="20dp"
+                android:background="@drawable/rectangle"
+                android:textColor="#fff"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:padding="16dp"
+                android:gravity="left">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Qauntity"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="center"/>
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="+"
+                    android:background="@drawable/circle_plus_minus"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"
+                    android:id="@+id/btn_plus"
+                    android:layout_marginLeft="15dp"/>
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textSize="18sp"
+                    android:gravity="center"/>
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="-"
+                    android:background="@drawable/circle_plus_minus"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"
+                    android:id="@+id/btn_minus"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="bottom"
+            android:layout_marginBottom="1dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add to Cart"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:background="@color/colorPrimary"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
